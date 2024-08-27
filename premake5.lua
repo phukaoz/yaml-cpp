@@ -28,10 +28,10 @@ project "yaml-cpp"
 		cppdialect "C++20"
 		staticruntime "on"
 		
-	filter "configuration:Debug"
+	filter "configurations:Debug"
 		runtime "Debug"
 		optimize "on"
 		
-	filter "configuration:Release"
+	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
