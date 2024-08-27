@@ -21,16 +21,14 @@ project "yaml-cpp"
 	
 	filter "system:windows"
 		systemversion "latest"
-		staticruntime "off"
 		
 	filter "system:linux"
 		pic "on"
 		systemversion "latest"
-		staticruntime "off"
 		
 	filter "configurations:Debug"
 		runtime "Debug"
-		optimize "on"
+		symbols "on"
 		
 	filter "configurations:Release"
 		runtime "Release"
